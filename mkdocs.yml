@@ -1,0 +1,23 @@
+---
+site_name: 'Zilla0717'
+site_description: 'Another iteration on the awesome Windmill theme for MkDocs'
+site_author: 'Zhongying Ru'
+site_url: https://ZillaRU.github.io/
+
+repo_url: https://github.com/ZillaRU/ZillaRU.github.io
+
+theme: material
+
+plugins:
+  - search
+  # - social
+  - tags
+
+# markdown_extensions:
+#   - pymdownx.highlight:
+#       anchor_linenums: true
+#       line_spans: __span
+#       pygments_lang_class: true
+#   - pymdownx.inlinehilite
+#   - pymdownx.snippets
+#   - pymdownx.superfences
