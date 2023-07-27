@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://ZillaRU.github.io/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ZillaRU.github.io/reading/diffusion_model/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ZillaRU.github.io/skills/dockerfile_cheetsheet/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ZillaRU.github.io/skills/docker%E4%BD%BF%E7%94%A8/</loc>
+         <lastmod>2023-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
