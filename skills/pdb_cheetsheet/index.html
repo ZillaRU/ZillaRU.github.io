@@ -12,14 +12,14 @@
         <meta name="author" content="Zhongying Ru">
       
       
-        <link rel="canonical" href="https://ZillaRU.github.io/reading/diffusion_model/">
+        <link rel="canonical" href="https://ZillaRU.github.io/skills/pdb_cheetsheet/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.2.11">
     
     
       
-        <title>图像生成 X Diffusion model - Zilla0717</title>
+        <title>pdb调试方法及高级使用技巧 - Zilla0717</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#x-diffusion-model" class="md-skip">
+        <a href="#pdb" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              图像生成 X Diffusion model
+              pdb调试方法及高级使用技巧
             
           </span>
         </div>
@@ -221,14 +221,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
@@ -249,100 +247,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          图像生成 X Diffusion model
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../reading/diffusion_model/" class="md-nav__link">
         图像生成 X Diffusion model
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-diffusion-model" class="md-nav__link">
-    1. 用于生成图像的Diffusion model的大致构成
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-module" class="md-nav__link">
-    2. 各个module的训练
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    3. 图片生成质量的评测指标
-  </a>
-  
-    <nav class="md-nav" aria-label="3. 图片生成质量的评测指标">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#31-fidfrechet-inception-distance" class="md-nav__link">
-    3.1 FID（Frechet Inception Distance）
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#32-clip-score" class="md-nav__link">
-    3.2 CLIP score
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#33-fcn-fully-convolutional-network-score" class="md-nav__link">
-    3.3 FCN (fully-convolutional network) score
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stable-diffusiondall-eimagen" class="md-nav__link">
-    附：Stable Diffusion、DALL-E、Imagen的结构示意
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -360,12 +269,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -388,7 +299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../skills/dockerfile_cheetsheet/" class="md-nav__link">
+      <a href="../dockerfile_cheetsheet/" class="md-nav__link">
         Dockerfile编写
       </a>
     </li>
@@ -402,7 +313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../skills/docker%E4%BD%BF%E7%94%A8/" class="md-nav__link">
+      <a href="../docker%E4%BD%BF%E7%94%A8/" class="md-nav__link">
         Docker使用
       </a>
     </li>
@@ -414,11 +325,86 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../skills/pdb_cheetsheet/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          pdb调试方法及高级使用技巧
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         pdb调试方法及高级使用技巧
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    使用场景
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    用法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pdb_1" class="md-nav__link">
+    pdb常用命令
+  </a>
+  
+    <nav class="md-nav" aria-label="pdb常用命令">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    断点 (建议使用绝对地址)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    高级技巧
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -457,44 +443,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-diffusion-model" class="md-nav__link">
-    1. 用于生成图像的Diffusion model的大致构成
+  <a href="#_1" class="md-nav__link">
+    使用场景
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-module" class="md-nav__link">
-    2. 各个module的训练
+  <a href="#_2" class="md-nav__link">
+    用法
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    3. 图片生成质量的评测指标
+  <a href="#pdb_1" class="md-nav__link">
+    pdb常用命令
   </a>
   
-    <nav class="md-nav" aria-label="3. 图片生成质量的评测指标">
+    <nav class="md-nav" aria-label="pdb常用命令">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#31-fidfrechet-inception-distance" class="md-nav__link">
-    3.1 FID（Frechet Inception Distance）
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#32-clip-score" class="md-nav__link">
-    3.2 CLIP score
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#33-fcn-fully-convolutional-network-score" class="md-nav__link">
-    3.3 FCN (fully-convolutional network) score
+  <a href="#_3" class="md-nav__link">
+    断点 (建议使用绝对地址)
   </a>
   
 </li>
@@ -505,8 +477,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#stable-diffusiondall-eimagen" class="md-nav__link">
-    附：Stable Diffusion、DALL-E、Imagen的结构示意
+  <a href="#_4" class="md-nav__link">
+    高级技巧
   </a>
   
 </li>
@@ -523,7 +495,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/ZillaRU/ZillaRU.github.io/edit/master/docs/reading/diffusion_model.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/ZillaRU/ZillaRU.github.io/edit/master/docs/skills/pdb_cheetsheet.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
@@ -532,43 +504,65 @@
 
 
 
-<h1 id="x-diffusion-model">图像生成 X Diffusion model</h1>
-<h2 id="1-diffusion-model">1. 用于生成图像的Diffusion model的大致构成</h2>
-<p>Stable Diffusion、DALL-E、Imagen方法基本都包含3个module：
-① <strong>text encoder</strong>: text prompt --&gt; text embedding
-② <strong>generation model（包含noise predictor）</strong>: 输入当前step（scheduler给出的噪声程度）和当前latent，预测噪声并从latent中去掉噪声。
-③ <strong>decoder</strong>：latent--&gt;image。
-<img alt="" src="https://upload-images.jianshu.io/upload_images/10854666-423954e70f3cd3ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" /></p>
-<h2 id="2-module">2. 各个module的训练</h2>
+<h1 id="pdb">pdb调试方法及高级使用技巧</h1>
+<h2 id="_1">使用场景</h2>
+<p>相比较pdb调试，IDE调试可视化更好。
+使用pdb调试的场景也有很多，比如：
+1. IDE调试不方便，比如在服务器上调试，或者在远程服务器上调试，或者在docker容器中调试。
+2. 大项目调试，比如django项目，需要在多个文件中调试，IDE调试不方便。</p>
+<h2 id="_2">用法</h2>
+<ol>
+<li><strong>侵入式</strong>：不用额外修改源代码，在命令行下直接<code>python3 -m pdb filename.py</code>就能调试</li>
+<li><strong>非侵入式</strong>：需要在被调试的代码中添加一行<code>import pdb;pdb.set_trace()</code>然后再正常运行代码</li>
+</ol>
+<p>当你在命令行看到<code>(Pdb)</code>这个提示符时，说明已经正确进入了pdb，就使用下面这些命令了。</p>
+<h2 id="pdb_1">pdb常用命令</h2>
+<h3 id="_3">断点 (建议使用绝对地址)</h3>
+<p>前一个xxx是py文件的<strong>路径</strong>，后一个xxx是<strong>行号</strong>。
+1. 打断点
+   - 输入<code>b xxx.py:xxx</code>设置断点。
+   - 输入<code>b funcname</code>在函数执行的第一行设置断点。
+   - 输入<code>b xxx.py:xxx if xxx</code>设置<strong>条件断点</strong>，需要说明的是这是pdb.set_trace()很难直接做到的。
+   - 输入<code>tbreak xxx.py:xxx</code>设置<strong>临时断点</strong>，这个断点会在第一次触发后自动删除。</p>
+<ol>
+<li>
+<p>清除断点</p>
 <ul>
-<li>3个module通常是<strong>分别训练再组合起来</strong>。</li>
-<li>text encoder：可以用GPT、BERT、CLIP等各种将文字转换到embedding的方法。Stable Diffusion没有训练text encoder这个module，而是直接采用了CLIP。</li>
-<li>decoder的训练不需要成对的text-image。
-如果generation model输出的是小图（Imagen的做法），那么decoder训练就是用一批正常size的图，下采样得到小图，以小图为输入训练decoder输出大图就可以了。
-如果generation model输出的latent representation（Stable Diffusion和DALL-E的做法），那么就需要训练一个auto-encoder，再把decoder拿过来用。
-<img alt="Auto-encoder的训练：让decoder的输出和原始输入接近" src="https://upload-images.jianshu.io/upload_images/10854666-f7d6484d9f554c12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" /></li>
-<li>generation model：StableDiffusion的generation model在<a href="https://zhuanlan.zhihu.com/p/571741834">LAION-5B数据集</a>（58.5亿，图文数据集，大小约80T）上训练的。
-<img alt="每次denoise，noise predictor以latent、text embedding、当前step为输入，预测当前latent中的噪声，再从latent中去除预测 的噪声" src="https://upload-images.jianshu.io/upload_images/10854666-54a177c5e27a985e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" /></li>
+<li>输入<code>cl xxx.py:xxx</code>清除断点。</li>
+<li>输入<code>cl all</code>清除所有断点。</li>
 </ul>
-<h2 id="3">3. 图片生成质量的评测指标</h2>
-<h3 id="31-fidfrechet-inception-distance">3.1 FID（<a href="https://arxiv.org/abs/1706.08500">Frechet Inception Distance</a>）</h3>
-<p>FID是两个图像数据集之间的相似性度量。它被证明与人类对视觉质量的判断有很好的相关性，并且最常用于评估生成对抗网络样本的质量。
-该指标需要一个pretrained CNN classifier，把真实图片和生成图片都喂进这个classifier得到latent，<em>假设真实/生成图片的latent各自服从高斯分布</em>，计算两个分布之间的Frechet距离。
-<img alt="FID的计算" src="https://upload-images.jianshu.io/upload_images/10854666-e9c3b84bd857d691.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" />
-- 计算FID需要非常多的样本。
-- FID值越小越好。
-- 实现：<a href="https://github.com/mseitzer/pytorch-fid">pytorch-fid</a></p>
-<h3 id="32-clip-score">3.2 CLIP score</h3>
-<p>Contrastive Language-Image Pretraining (CLIP)是在4亿图文对上训练的，包含一个text encoder和一个Image encoder。其对比思路是，内容相符的图文对latent越近越好，内容不符的图文对latent越远越好。
-<img alt="CLIP的对比思路" src="https://upload-images.jianshu.io/upload_images/10854666-52db2ceb513adad6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" />
-图文对的相似程度（即CLIP score）也可以用于衡量文生图的质量。</p>
-<h3 id="33-fcn-fully-convolutional-network-score">3.3 <a href="https://github.com/wkentaro/pytorch-fcn">FCN (fully-convolutional network) score</a></h3>
-<p>如果生成的图像是真实的，那么在真实图像上训练的分类器也能够正确地对合成图像进行分类。可以根据合成照片的标签的分类准确率对合成照片进行评分。</p>
-<h2 id="stable-diffusiondall-eimagen">附：Stable Diffusion、DALL-E、Imagen的结构示意</h2>
-<p><img alt="Stable Diffusion" src="https://upload-images.jianshu.io/upload_images/10854666-874e791e419b5019.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" /></p>
-<p><img alt="DALL-E系列" src="https://upload-images.jianshu.io/upload_images/10854666-170c8ccad10d5922.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" /></p>
-<p><img alt="Imagen" src="https://upload-images.jianshu.io/upload_images/10854666-9adbf8517b6ca631.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" />
-Image先生成一个64*64的小图，随后再经过一个Diffusion model</p>
+</li>
+<li>
+<p>查看堆栈信息<code>bt</code>,用 ↑ 和 ↓ 按键可以在堆栈中移动。</p>
+</li>
+<li>查看当前执行的源码周围10行代码<code>l</code> (list)</li>
+<li>查看变量、保存变量等各种操作</li>
+<li><code>p expression</code>： expression是Python语句，可以用来查看变量，保存中间结果用于复现<ul>
+<li>比如p img.save('test.png')、p np.save('latents.npy',latents)</li>
+</ul>
+</li>
+<li>打印变量类型<code>whatis expression</code></li>
+<li>
+<p>查看函数参数和参数的值<code>a</code></p>
+</li>
+<li>
+<p>逐行调试命令
+    <code>s   //执行下一行（能够进入函数体）
+    n   //next 执行下一行（不会进入函数体）
+    r   //执行下一行（在函数中时会直接执行到函数返回处）</code></p>
+</li>
+<li>非逐行调试命令
+    <code>c           //持续执行下去，直到遇到一个断点
+    unt lineno  //持续执行直到运行到指定行（或遇到断点）
+    j  lineno   //直接跳转到指定行（注意，被跳过的代码不执行）</code></li>
+<li>退出pdb：<code>q</code></li>
+</ol>
+<h2 id="_4">高级技巧</h2>
+<ul>
+<li>调试多线程：针对多线程，需要在每个线程中都添加断点，然后在进入pdb时，输入<code>thread xxx</code>切换到指定线程。</li>
+<li>查看变量是否具有某个或者某些属性：在进入pdb时，输入<code>hasattr(xxx, 'xxx')</code>查看变量是否具有某个或者某些属性。或者使用<code>dir(xxx)</code>查看变量的所有属性。</li>
+<li><code>t=lambda x:fun(x)：（lambda）</code> 执行lambda表达式一行出结果，但是需要考虑到pdb中的lambda之间不具有上下文语义，所以需要使用lambda x:fun(x)的形式，lambda不要串联。</li>
+</ul>
 
               
             </article>
@@ -582,7 +576,7 @@ Image先生成一个64*64的小图，随后再经过一个Diffusion model</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+        <a href="../docker%E4%BD%BF%E7%94%A8/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Docker使用" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -591,26 +585,11 @@ Image先生成一个64*64的小图，随后再经过一个Diffusion model</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Home
+              Docker使用
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../../skills/dockerfile_cheetsheet/" class="md-footer__link md-footer__link--next" aria-label="Next: Dockerfile编写" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Dockerfile编写
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
