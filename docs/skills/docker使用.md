@@ -46,7 +46,7 @@ Docker镜像是由 Dockerfile 和一些必要的依赖项组成的，**Docker容
 - `docker exec`：在运行的容器中执行命令，格式是`docker <object> <command> <options>`。
 - `docker container ls`或`docker ps`: 列出（默认是：运行中的）容器,要列出所有容器需要加`-a`。
 - 查看容器信息 `docker inspect 容器名称/id`
-- 打印日志 `docker logs 容器名称/id`: 日志默认是截止到目前为止的日志。如果想要持续看到新打印出的日志信息，那么可以加上-f。
+- 打印日志 `docker logs 容器名称/id`: 日志默认是截止到目前为止的日志。如果想要持续看到新打印出的日志信息，那么可以加上`-f`。可`>& filename`重定向到文件。可结合`grep`使用。
 - `docker stats`: **实时**看容器的**资源占用**情况，默认列出所有运行中容器。
 - 停止容器
   - 停止正在运行的容器 `docker stop 容器名称/id`
@@ -76,4 +76,7 @@ Docker镜像是由 Dockerfile 和一些必要的依赖项组成的，**Docker容
 - 查看docker版本信息 `docker version`
 - 登录到docker镜像仓库 `docker login`,根据提示键入你的用户名和密码。
 - 删除所有未使用的容器、网络以及无名称的镜像（虚悬镜像）`docker system prune`。
-
+- 给用户加docker权限
+  1. `sudo groupadd -f docker` 新增docker用户组（应该本来就有）
+  2. `sudo usermod -aG docker $USER` 把当前用户加到docker用户组
+  3. `newgrp docker` 让配置立刻生效。或者`sudo service docker restart`重启docker服务，重新进入终端后生效。
