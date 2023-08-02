@@ -17,10 +17,12 @@ Docker镜像是由 Dockerfile 和一些必要的依赖项组成的，**Docker容
     `docker container create [my_repo]/[my_image]:[my_tag]`
     [my_repo]/[my_image]:[my_tag]可以简写为[my_image]
 
-- **启动**已有镜像 `start`
+- **启动**已有容器 `start`
     
     `docker container start [container_ID or container_name]`
-- **重启**已有镜像 `restart`
+- **退出容器**：`exit`或者`ctrl + D`
+- **进入**容器：若容器运行在后台，`docker attach container_id或name`（每次从container中退出到前台时，container也跟着退出了）；若想在`ctrl + D`退出container时，container仍在后台运行要使用`docker exec`。比如`docker exec -it container_name /bin/bash`,`/bin/bash`在container中启动一个bash shell。
+- **重启**已有容器 `restart`
 - **创建新容器并启动**
   - `docker container run [my_image]`或者`docker run [my_image]`，这个命令选项非常多，可参考[LINK](https://www.runoob.com/docker/docker-run-command.html)。常用的有：
 
