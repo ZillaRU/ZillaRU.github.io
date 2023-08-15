@@ -41,7 +41,7 @@ def add_hyperlink_to_files(folder_path, css_file_path):
                     for element in elements:
                         # 创建超链接元素
                         link = soup.new_tag(
-                            "a", href="https://yliuhz.github.io", class_="my-link")
+                            "a", href="https://yliuhz.github.io", class_="rabbit-link")
                         link.string = "看看❤️老兔子❤️忙啥呢～"
                         # 将超链接元素添加到元素中
                         element.append(link)
