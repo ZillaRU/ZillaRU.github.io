@@ -2,37 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ZillaRU.github.io/</loc>
-         <lastmod>2023-08-15</lastmod>
+         <lastmod>2024-04-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ZillaRU.github.io/reading/diffusion_model/</loc>
-         <lastmod>2023-08-15</lastmod>
+         <lastmod>2024-04-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ZillaRU.github.io/skills/bash_quickstart/</loc>
-         <lastmod>2023-08-15</lastmod>
+         <lastmod>2024-04-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ZillaRU.github.io/skills/cpp_program_build/</loc>
+         <lastmod>2024-04-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ZillaRU.github.io/skills/dockerfile_cheetsheet/</loc>
-         <lastmod>2023-08-15</lastmod>
+         <lastmod>2024-04-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ZillaRU.github.io/skills/docker%E4%BD%BF%E7%94%A8/</loc>
-         <lastmod>2023-08-15</lastmod>
+         <lastmod>2024-04-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ZillaRU.github.io/skills/mkdocs%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/</loc>
-         <lastmod>2023-08-15</lastmod>
+         <lastmod>2024-04-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ZillaRU.github.io/skills/pdb_cheetsheet/</loc>
-         <lastmod>2023-08-15</lastmod>
+         <lastmod>2024-04-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
