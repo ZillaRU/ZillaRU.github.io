@@ -50,10 +50,12 @@ Make 是一个工具，它使用一个名为 Makefile 的文件，该文件定�
 
 ### Makefile的常见写法
 Makefile 是 Make 工具使用的文件，用于自动化编译和链接程序。它定义了一系列的规则来指定如何生成目标文件和执行任务。
+
 * 基本组成
     - 目标（Targets）：通常是文件名，代表了构建系统需要创建的文件。
     - 依赖（Dependencies）：目标文件依赖的文件列表，这些文件是生成目标所需的。
     - 规则（Rules）：如何从依赖生成目标的具体命令。
+
 * 格式
     ```makefile
     target: dependencies
@@ -62,6 +64,7 @@ Makefile 是 Make 工具使用的文件，用于自动化编译和链接程序�
     - target：你想要生成的文件。
     - dependencies：生成该目标所需要的文件或目标。
     - recipe：生成目标所需执行的命令，必须以一个Tab键开始。
+
 * 一个例子
     ```makefile
     # 变量定义
