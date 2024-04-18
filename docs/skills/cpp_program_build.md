@@ -66,7 +66,7 @@ Makefile 是 Make 工具使用的文件，用于自动化编译和链接程序�
     - recipe：生成目标所需执行的命令，必须以一个Tab键开始。
 
 * 一个例子
-    ```makefile
+    ```bash
     # 变量定义
     CC=gcc
     CFLAGS=-I.

@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+custom_footer_plugin = custom_footer_plugin:CustomFooterPlugin

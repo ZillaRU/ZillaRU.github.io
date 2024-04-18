@@ -61,6 +61,10 @@ plugins:
   - minify:
       minify_html: true
   - tags
+  - custom_footer_plugin:
+      link_url: https://yliuhz.github.io/
+      link_text: 💗看看粉红老兔忙啥呢💗
+      link_style: 'color: deeppink;'
   # - material/social
   # - social
 
